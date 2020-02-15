@@ -3,7 +3,7 @@ all: master.pdf
 clean: master.pdf
 	rm master.pdf
 
-master.pdf: *.tex */*.tex
+master.pdf: *.tex */*.tex */*.lua
 	lualatex master.tex -interaction=nonstopmode && lualatex -interaction=nonstopmode master.tex
 
 publish: master.pdf

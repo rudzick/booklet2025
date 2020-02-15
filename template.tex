@@ -1,0 +1,26 @@
+
+% time: ((( date|datetimeformat('%A %H:%M') )))
+% URL: https://pretalx.com/fossgis2020/talk/((( slug )))/
+
+((% if type == 'Workshop' -%))
+((% if last_timeslot != date %))\newSmallTimeslot{((( date|datetimeformat )))}((% endif %))
+\noindent\workshop{((( title|e )))}{((( speakers|e )))}{((( room|e )))}
+\workshopspace((% else -%))%
+((% if last_timeslot != date %))\newTimeslot{((( date|datetimeformat )))}((% endif %))
+\noindent((( command ))){%
+  ((( speakers|e )))%
+}{%
+  ((( title|e )))%
+}{%
+}{%
+((# two spaces are inserted by preprocessing at the beginning of each line -#))
+((( abstract|e )))%
+}%((% if command == default_cmd.command %))
+{%
+  ((( room|e )))%
+}%
+((% endif %))
+((% endif %))
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
