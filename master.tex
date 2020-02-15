@@ -8,11 +8,9 @@ fontsize=9pt,
 parskip=false,
 openany]{scrbook}
 %\pdfminorversion=4
-\usepackage{polyglossia}
-\setdefaultlanguage[spelling=new]{german}
-
-\setmainfont{Source Sans Pro}
-\setsansfont{Source Sans Pro}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[default]{sourcesanspro}
 
 \usepackage{ifmtarg}
 \usepackage{ifthen}
@@ -107,7 +105,6 @@ openany]{scrbook}
 %\end{titlepage}
 \pagestyle{cropmarksstyle}
 
-\selectlanguage{german}
 \input{contents}
 \input{willkommen}
 \input{workshops}
