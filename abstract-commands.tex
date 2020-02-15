@@ -68,16 +68,16 @@ height=169mm, contents={%
 
 % \setpagebackground selects the page style to be used depending on the current day. Each day has
 % its own page style.
-\newcommand{\setPageBackground}{ %
+\newcommand{\setPageBackground}{%
   \ifthenelse{\equal{\conferenceDay}{\mittwoch}}{%
-    \pagestyle{mittwoch}
-  }{}
+    \pagestyle{mittwoch}%
+  }{}%
   \ifthenelse{\equal{\conferenceDay}{\donnerstag}}{%
-    \pagestyle{donnerstag}
-  }{}
+    \pagestyle{donnerstag}%
+  }{}%
   \ifthenelse{\equal{\conferenceDay}{\freitag}}{%
-    \pagestyle{freitag}
-  }{}
+    \pagestyle{freitag}%
+  }{}%
 }
 
 
@@ -106,7 +106,7 @@ height=169mm, contents={%
   \setPageBackground%
   \calculateRoomTimeAndTitleWidth{#1}{#6}%
   \noindent\fcolorbox{white}{#5}{%
-    \parbox{\titleboxwidth}{%
+    \noindent\parbox{\titleboxwidth}{%
       \isSpeakerEmpty{#1}{#2}{#6}%
       \isSubtitleEmpty{#3}%
     }%
@@ -173,6 +173,7 @@ height=169mm, contents={%
     {%
       \begin{minipage}[t][][t]{\titleWidth}
         \RaggedRight
+        \noindent
         \emph{#1} % speaker
         \par%
         \vspace{0.3\baselineskip}
@@ -182,6 +183,7 @@ height=169mm, contents={%
       \hfill
       \begin{minipage}[t][][t]{\roomTimeWidth}
         \RaggedLeft
+        \noindent
         \talkTime%
         \par%
         \noindent #3% room

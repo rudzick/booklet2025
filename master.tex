@@ -1,7 +1,18 @@
-\documentclass[version=last,toc=bib,toc=graduated,toc=index,toc=listof,9pt,openany]{scrbook}
-\usepackage[utf8]{inputenc}
-\usepackage[ngerman, english]{babel}
-\usepackage[default]{sourcesanspro}
+\documentclass[
+version=last,
+toc=bib,
+toc=graduated,
+toc=index,
+toc=listof,
+fontsize=9pt,
+parskip=false,
+openany]{scrbook}
+%\pdfminorversion=4
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new]{german}
+
+\setmainfont{Source Sans Pro}
+\setsansfont{Source Sans Pro}
 
 \usepackage{ifmtarg}
 \usepackage{ifthen}
@@ -10,7 +21,7 @@
 \usepackage{geometry}
 \geometry{%a6paper
   paperwidth=125mm,
-  paperheight=168mm, 
+  paperheight=168mm,
   portrait,
   top=22mm,
   inner=22mm,
@@ -96,10 +107,11 @@
 %\end{titlepage}
 \pagestyle{cropmarksstyle}
 
-\selectlanguage{ngerman}
+\selectlanguage{german}
 \input{contents}
 \input{willkommen}
-%\input{tabelle-mittwoch}
+\input{workshops}
+\input{tabelle-mittwoch}
 \input{mittwoch}
 \input{donnerstag}
 \input{freitag}
