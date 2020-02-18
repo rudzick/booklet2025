@@ -177,7 +177,6 @@ height=169mm, contents={%
         \noindent
         \emph{#1} % speaker
         \par%
-        \vspace{0.3\baselineskip}
         \noindent%
         {\large \sectfont #2}%
       \end{minipage}%
@@ -221,19 +220,19 @@ height=169mm, contents={%
 % abstract at HS Rundbau
 \newcommand{\abstractHSRundbau}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{geoblau}{S239}
+  \setAbstract{#1}{#2}{#3}{#4}{geoblau}{Rundbau}
 }
 
 % abstract at HS Anatomie
 \newcommand{\abstractHSAnatomie}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{hellgelb}{Z211}
+  \setAbstract{#1}{#2}{#3}{#4}{hellgelb}{Anatomie}
 }
 
 % abstract at HS Weismannhaus
 \newcommand{\abstractWeismannhaus}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{hellgruen}{Z254}
+  \setAbstract{#1}{#2}{#3}{#4}{hellgruen}{Weismannh.}
 }
 
 % event at Mensa
@@ -253,7 +252,7 @@ height=169mm, contents={%
   % 1. titel
   % 2. speaker
   % 3. Room
-  \setlength\tabcolsep{0pt}
+  \setlength\tabcolsep{0pt}%
   \noindent\fcolorbox{white}{dezentrot}{%
     \parbox{\titleboxwidth}{%
       \noindent%
@@ -406,7 +405,7 @@ height=169mm, contents={%
 
 \newcommand{\workshop}[3]%
 {%
-  \workshopbox{#1}{#2}{#3}
+  \workshopbox{#1}{#2}{#3}%
 }%
 
 \newcommand{\otherevent}[1]%
