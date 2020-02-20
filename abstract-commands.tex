@@ -287,8 +287,8 @@ height=169mm, contents={%
 }
 
 \newcommand{\sponsorBoxA}[4]{%
-  \setlength{\fboxwidth}{\textwidth}
-  \advance\fboxwidth by -10.0pt
+  \setlength{\fboxwidth}{\textwidth}%
+  \advance\fboxwidth by -10.0pt%
   \abstractSponsorbox{#1}{#2}{#3}{#4}{\abstractsSection}%
 }
 
@@ -318,21 +318,21 @@ height=169mm, contents={%
       \hspace{-1pt}%
     }%
     \fcolorbox{gray}{white}{%
-      \parbox{\fboxwidth}{
+      \parbox{\fboxwidth}{%
         \setlength{\parindent}{\saveparindent}%
         \@ifmtarg{#1}{}{%
-          \begin{wrapfigure}[#3]{r}[0pt]{#2}
-            \centering\vspace{-1\baselineskip}
-            \includegraphics[width=#2]{#1}
-          \end{wrapfigure}
-        }
-  
+          \begin{wrapfigure}[#3]{r}[0pt]{#2}%
+            \centering\vspace{-1\baselineskip}%
+            \includegraphics[width=#2]{#1}%
+          \end{wrapfigure}%
+        }%
+
         \noindent #4
       }%
-    }
-    \setlength{\fboxsep}{3pt}
-  }
-  \setlength{\fboxsep}{3pt}
+    }%
+    \setlength{\fboxsep}{3pt}%
+  }%
+  \setlength{\fboxsep}{3pt}%
 \makeatother
 
 % definition of column types for the schedule tables
