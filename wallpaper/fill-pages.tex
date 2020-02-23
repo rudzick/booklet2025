@@ -1,3 +1,17 @@
+% Titelseite
+\DeclareNewLayer[background,%
+  width=115mm,%
+  height=158mm,%
+  hoffset=5mm,%
+  voffset=10mm,%
+  contents={%
+    \resizebox{115mm}{!}{\input{images-print/bollenhut.tex}}%
+  }%
+]{titelseite}
+\newpairofpagestyles[]{page-title}{}
+\AddLayersAtBeginOfPageStyle{page-title}{titelseite}
+\AddLayersAtBeginOfPageStyle{page-title}{cropmarksplain}
+
 % Campuskarte
 \DeclareNewLayer[background,%
   width=115mm,%
