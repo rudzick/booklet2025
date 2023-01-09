@@ -1,6 +1,6 @@
 ## About this repository
 
-This repository is for the source code of the booklet of [FOSSGIS 2020 conference](http://fossgis-konferenz.de/2020/) in Freiburg im Breisgau from 11 to 14 March 2020. A nightly build can be found [here](https://michreichert.de/fossgis/booklet20/master.pdf).
+This repository is for the source code of the booklet of [FOSSGIS 2023 conference](http://fossgis-konferenz.de/2023/) in Berlin-Adlershof from 15 to 18 March 2023.
 
 ## Building
 
