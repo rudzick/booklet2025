@@ -96,7 +96,7 @@ height=169mm, contents={%
 \newcommand{\tmpRoomTimeWidth}{}
 \newcommand{\tmpTitleWidth}{}
 
-\newcommand{\setAbstract}[6]{%
+\DeclareRobustCommand*{\setAbstract}[6]{%
   % 1. speaker
   % 2. title
   % 3. subtitle
@@ -217,28 +217,28 @@ height=169mm, contents={%
 \definecolor{hellgelb}{cmyk}{0 .02 0.36 0}
 \definecolor{hellgruen}{cmyk}{0.10 .0 0.22 0.05}
 
-% abstract at HS Rundbau
-\newcommand{\abstractHSRundbau}[4]%
+% abstract at HS 1
+\DeclareRobustCommand*{\abstractHSeins}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{geoblau}{Rundbau}
+  \setAbstract{#1}{#2}{#3}{#4}{geoblau}{Hörsaal 1 (0115)}
 }
 
-% abstract at HS Anatomie
-\newcommand{\abstractHSAnatomie}[4]%
+% abstract at HS 2
+\DeclareRobustCommand*{\abstractHSzwei}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{hellgelb}{Anatomie}
+  \setAbstract{#1}{#2}{#3}{#4}{hellgelb}{Hörsaal 2 (0110)}
 }
 
-% abstract at HS Weismannhaus
-\newcommand{\abstractWeismannhaus}[4]%
+% abstract at HS 3
+\DeclareRobustCommand*{\abstractHSdrei}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{hellgruen}{Weismannh.}
+  \setAbstract{#1}{#2}{#3}{#4}{hellgruen}{Hörsaal 3 (0119)}
 }
 
-% event at Mensa
-\newcommand{\abstractMensa}[4]%
+% abstract at HS 4
+\DeclareRobustCommand*{\abstractHSvier}[4]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{dezentrot}{Mensa}
+  \setAbstract{#1}{#2}{#3}{#4}{dezentrot}{Hörsaal 4, Demosession (0313)}
 }
 
 % abstract at a different location

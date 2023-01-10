@@ -27,21 +27,21 @@ latex_substitutions = [
 ]
 
 commands = {
-    "HS Rundbau": {
-        "name": "HS Rundbau",
-        "command": "\\abstractHSRundbau"
+    "H\u00f6rsaal 1 (0115)": {
+        "name": "Hörsaal 1 (0115)",
+        "command": "\\abstractHSeins"
         },
-    "HS Anatomie": {
-        "name": "Z211",
-        "command": "\\abstractHSAnatomie"
+    "H\u00f6rsaal 2 (0110)": {
+        "name": "Hörsaal 2 (0110)",
+        "command": "\\abstractHSzwei"
         },
-    "HS Weismannhaus": {
-        "name": "Z254",
-        "command": "\\abstractWeismannhaus"
+    "H\u00f6rsaal 3 (0119)": {
+        "name": "Hörsaal 3 (0119)",
+        "command": "\\abstractHSdrei"
         },
-    "Mensa": {
-        "name": "Z208",
-        "command": "\\abstractMensa"
+    "H\u00f6rsaal 4, Demosession (0313)": {
+        "name": "Hörsaal 4, Demosession (0313)",
+        "command": "\\abstractHSvier"
         },
 }
 default_cmd = {"name": "???", "command": "\\abstractOther"}
