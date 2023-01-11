@@ -7,8 +7,8 @@ This repository is for the source code of the booklet of [FOSSGIS 2023 conferenc
 To build the booklet run:
 
 ```sh
-pdflatex master.tex
-pdflatex master.tex
+lualatex master.tex
+lualatex master.tex
 ```
 
 ## Contributing
