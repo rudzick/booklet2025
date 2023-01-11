@@ -93,6 +93,9 @@ def break_long_lines(source):
         if result[i] != "":
             result[i] = "  {}".format(result[i])
     result = "\n".join(result)
+    result = result.replace("\n\n", "\n")
+    result = result.replace("\n\n", "\n")
+    result = result.replace("\n\n", "\n")
     return result
 
 
@@ -116,9 +119,9 @@ for day in schedule["conference"]["days"]:
         continue
     for room, sessions in day["rooms"].items():
         for talk in sessions:
-            if args.workshops and talk["type"] != "Workshop":
+            if args.workshops and talk["type"] != "Workshop (Pr\u00e4senz)":
                 continue
-            elif not args.workshops and talk["type"] == "Workshop":
+            elif not args.workshops and talk["type"] == "Workshop (Pr\u00e4senz)":
                 continue
             speakers = []
             for person in talk["persons"]:
