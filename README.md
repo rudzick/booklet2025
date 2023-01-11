@@ -1,14 +1,14 @@
 ## About this repository
 
-This repository is for the source code of the booklet of [FOSSGIS 2023 conference](http://fossgis-konferenz.de/2023/) in Berlin-Adlershof from 15 to 18 March 2023.
+This repository is for the source code of the booklet of [FOSSGIS 2023 conference](http://fossgis-konferenz.de/2023/) in Berlin-Adlershof from 15 to 18 March 2023. A nightly build can be found [here](https://mymapnik.rudzick.it/master.pdf).
 
 ## Building
 
 To build the booklet run:
 
 ```sh
-pdflatex master.tex
-pdflatex master.tex
+lualatex master.tex
+lualatex master.tex
 ```
 
 ## Contributing
