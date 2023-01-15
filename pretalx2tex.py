@@ -40,8 +40,16 @@ commands = {
         "command": "\\abstractHSdrei"
         },
     "H\u00f6rsaal 4, Demosession (0313)": {
-        "name": "Hörsaal 4, Demosession (0313)",
+        "name": "Hörsaal 4 (0313)",
         "command": "\\abstractHSvier"
+        },
+    "Expert:innen | BoF | Anwender (1306)": {
+        "name": "Expert. | BoF | Anwend. (1306)",
+        "command": "\\abstractExpBoFAnw"
+        },
+   "Anwendertreffen | BoF (1307)": {
+        "name": "Anwend. | BoF (1307)",
+        "command": "\\abstractAnwBoF"
         },
 }
 default_cmd = {"name": "???", "command": "\\abstractOther"}
