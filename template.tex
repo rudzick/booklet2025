@@ -2,7 +2,7 @@
 % time: ((( date|datetimeformat('%A %H:%M') )))
 % URL: https://pretalx.com/fossgis2023/talk/((( slug )))/
 
-((% if type == 'Workshop' -%))
+((% if type == 'Workshop (Pr\u00e4senz)' -%))
 ((% if last_timeslot != date %))\newSmallTimeslot{((( date|datetimeformat )))}((% endif %))
 \noindent\workshop{((( title|e )))}{((( speakers|e )))}{((( room|e )))}
 \workshopspace((% else -%))%
