@@ -63,3 +63,41 @@
 \newpairofpagestyles[]{page-campuskarte}{}
 \AddLayersAtBeginOfPageStyle{page-campuskarte}{campuskarte}
 \AddLayersAtBeginOfPageStyle{page-campuskarte}{cropmarksplain}
+
+% Raumplan Erwin-Schrödinger-Zentrum
+\DeclareNewLayer[background,%
+  width=115mm,%
+  height=158mm,%
+  hoffset=5mm,%
+  voffset=5mm,%
+  contents={%
+    \begin{tikzpicture}[x=1mm, y=1mm]%
+      % map image
+      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
+        \includegraphics[height=158mm]{images-print/Raumplan_ESZ_RUD26.png}%
+      };%
+      \end{tikzpicture}%
+   }%
+]{esz}
+\newpairofpagestyles[]{page-esz}{}
+\AddLayersAtBeginOfPageStyle{page-esz}{esz}
+\AddLayersAtBeginOfPageStyle{page-esz}{cropmarksplain}
+
+% Raumplan Geographisches Institut
+\DeclareNewLayer[background,%
+  width=115mm,%
+  height=158mm,%
+  hoffset=5mm,%
+  voffset=5mm,%
+  contents={%
+    \begin{tikzpicture}[x=1mm, y=1mm]%
+      % map image
+      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
+        \includegraphics[height=158mm]{images-print/Raumplan_GI_RUD16.png}%
+      };%
+      \end{tikzpicture}%
+   }%
+]{gi}
+\newpairofpagestyles[]{page-gi}{}
+\AddLayersAtBeginOfPageStyle{page-gi}{gi}
+\AddLayersAtBeginOfPageStyle{page-gi}{cropmarksplain}
