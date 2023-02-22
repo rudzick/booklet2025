@@ -3,10 +3,15 @@
   width=115mm,%
   height=158mm,%
   hoffset=5mm,%
-  voffset=10mm,%
+  voffset=5mm,%
   contents={%
-    \resizebox{115mm}{!}{\input{images-print/bollenhut.tex}}%
-  }%
+   \begin{tikzpicture}[x=1mm, y=1mm]%
+      % map image
+      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
+        \includegraphics[height=158mm]{images-print/Entwurf_Titelbild_A6.pdf}%
+      };%
+      \end{tikzpicture}%
+   }%
 ]{titelseite}
 \newpairofpagestyles[]{page-title}{}
 \AddLayersAtBeginOfPageStyle{page-title}{titelseite}
