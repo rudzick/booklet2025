@@ -69,6 +69,25 @@
 \AddLayersAtBeginOfPageStyle{page-campuskarte}{campuskarte}
 \AddLayersAtBeginOfPageStyle{page-campuskarte}{cropmarksplain}
 
+% Campuskarte Adlershof
+\DeclareNewLayer[background,%
+  width=115mm,%
+  height=158mm,%
+  hoffset=20mm,%
+  voffset=5mm,%
+  contents={%
+    \begin{tikzpicture}[x=1mm, y=1mm]%
+      % map image
+      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
+        \includegraphics[height=158mm]{images-print/uebersicht-adlershof_hoch.png}%
+      };%
+      \end{tikzpicture}%
+   }%
+]{uebersicht-adlershof}
+\newpairofpagestyles[]{page-uebersicht-adlershof}{}
+\AddLayersAtBeginOfPageStyle{page-uebersicht-adlershof}{uebersicht-adlershof}
+\AddLayersAtBeginOfPageStyle{page-uebersicht-adlershof}{cropmarksplain}
+
 % Raumplan Erwin-Schrödinger-Zentrum
 \DeclareNewLayer[background,%
   width=115mm,%
