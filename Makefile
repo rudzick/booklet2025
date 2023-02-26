@@ -7,4 +7,4 @@ master.pdf: *.tex */*.tex */*.lua images-print/*.pdf images-print/*.png sponsore
 	lualatex master.tex -interaction=nonstopmode && lualatex -interaction=nonstopmode master.tex
 
 publish: master.pdf
-	scp master.pdf 1blu-rootserver:/var/www/html/fossgis/booklet20/
+	rsync -avu master.pdf mymapnik:/var/www/html
