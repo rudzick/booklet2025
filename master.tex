@@ -68,17 +68,25 @@ openany]{scrbook}
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{array}
-
+\usepackage{varwidth}
 
 \usepackage{refcount} % calculation of the page where the map is located
+
+%\DeclareUnicodeCharacter{2032}{minutenstrich}
 
 % page background
 \usepackage[manualmark]{scrlayer-scrpage}
 \pagestyle{scrplain}
 
 \newcommand{\acro}[1]{{\textsmaller[0.5]{#1}}} % macro for abbreviations with more than one capitalised letter
-
-
+\newcommand{\keeptabcolsep}{%
+  \edef\restoretabcolsep{%
+    \tabcolsep=\the\tabcolsep
+  }%
+}
+\newcommand{\demotabcolsep}{%
+  \setlength{\tabcolsep}{0.1em}
+}%
 % title/metadata
 \title{FOSSGIS-Konferenz 2023}
 \subtitle{Programm}
