@@ -1,6 +1,6 @@
 ## About this repository
 
-This repository is for the source code of the booklet of [FOSSGIS 2023 conference](http://fossgis-konferenz.de/2023/) in Berlin-Adlershof from 15 to 18 March 2023. A nightly build can be found [here](https://mymapnik.rudzick.it/master.pdf).
+This repository is for the source code of the booklet of [FOSSGIS 2024 conference](http://fossgis-konferenz.de/2024/) in Hamburg from 20 to 23 March 2024. A nightly build can be found [here](https://mymapnik.rudzick.it/master.pdf).
 
 ## Building
 
