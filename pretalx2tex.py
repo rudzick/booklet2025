@@ -27,29 +27,33 @@ latex_substitutions = [
 ]
 
 commands = {
-    "H\u00f6rsaal 1 (0115)": {
-        "name": "Hörsaal 1 (0115)",
+    "H\u00f6rsaal 1 (Audimax 1)": {
+        "name": "Hörsaal 1 (Audimax 1)",
         "command": "\\abstractHSeins"
         },
-    "H\u00f6rsaal 2 (0110)": {
-        "name": "Hörsaal 2 (0110)",
+    "H\u00f6rsaal 2 (Dietze H016)": {
+        "name": "Hörsaal 2 (Dietze H016)",
         "command": "\\abstractHSzwei"
         },
-    "H\u00f6rsaal 3 (0119)": {
-        "name": "Hörsaal 3 (0119)",
+    "H\u00f6rsaal 3 (K0506/ Audimax 2)": {
+        "name": "Hörsaal 3 (K0506/ Audimax 2)",
         "command": "\\abstractHSdrei"
         },
-    "H\u00f6rsaal 4, Demosession (0313)": {
-        "name": "Hörsaal 4 (0313)",
+    "H\u00f6rsaal 4 (A.013)": {
+        "name": "Hörsaal 4 (A.013)",
         "command": "\\abstractHSvier"
         },
-    "Expert:innen | BoF | Anwender (1306)": {
-        "name": "Expert. | BoF | Anwend. (1306)",
-        "command": "\\abstractExpBoFAnw"
+    "Expert:innen (H.04)": {
+        "name": "Expert:innen (H.04)",
+        "command": "\\abstractExp"
         },
-   "Anwendertreffen | BoF (1307)": {
-        "name": "Anwend. | BoF (1307)",
-        "command": "\\abstractAnwBoF"
+   "Anwendertreffen/BoF1 (H.09)": {
+        "name": "Anwendertreffen/BoF1 (H.09)",
+        "command": "\\abstractAnwBoFeins"
+        },
+   "Anwendertreffen/BoF2 (H.08)": {
+        "name": "Anwendertreffen/BoF2 (H.08)",
+        "command": "\\abstractAnwBoFzwei"
         },
 }
 default_cmd = {"name": "???", "command": "\\abstractOther"}
