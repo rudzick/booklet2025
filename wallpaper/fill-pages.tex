@@ -2,8 +2,8 @@
 \DeclareNewLayer[background,%
 %  width=115mm,%
  % height=158mm,%
- % hoffset=5mm,%
- % voffset=5mm,%
+% hoffset=5mm,%
+% voffset=5mm,%
   width=115mm,%
   height=158mm,%
   hoffset=10mm,%
@@ -21,26 +21,7 @@
 \AddLayersAtBeginOfPageStyle{page-title}{titelseite}
 \AddLayersAtBeginOfPageStyle{page-title}{cropmarksplain}
 
-% Campuskarte Adlershof
-\DeclareNewLayer[background,%
-  width=115mm,%
-  height=158mm,%
-  hoffset=22mm,%
-  voffset=10mm,%
-  contents={%
-    \begin{tikzpicture}[x=1mm, y=1mm]%
-      % map image
-      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[width=148mm,angle=90,origin=c]{images-print/1_Booklet_Raumpläne.pdf}%
-      };%
-      \end{tikzpicture}%
-   }%
-]{uebersicht-adlershof}
-\newpairofpagestyles[]{page-uebersicht-adlershof}{}
-\AddLayersAtBeginOfPageStyle{page-uebersicht-adlershof}{uebersicht-adlershof}
-\AddLayersAtBeginOfPageStyle{page-uebersicht-adlershof}{cropmarksplain}
-
-% Raumplan Erwin-Schrödinger-Zentrum
+% Übersicht alle Häuser 
 \DeclareNewLayer[background,%
   width=115mm,%
   height=158mm,%
@@ -50,30 +31,68 @@
     \begin{tikzpicture}[x=1mm, y=1mm]%
       % map image
       \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[width=148mm,angle=90,origin=c]{images-print/2_Booklet_Raumpläne.pdf}%
+        \includegraphics[height=148mm]{images-print/A6_Häuser_V2.pdf}%
       };%
       \end{tikzpicture}%
    }%
-]{esz}
-\newpairofpagestyles[]{page-esz}{}
-\AddLayersAtBeginOfPageStyle{page-esz}{esz}
-\AddLayersAtBeginOfPageStyle{page-esz}{cropmarksplain}
+]{uebersicht-alle-haeuser}
+\newpairofpagestyles[]{page-uebersicht-alle-haeuser}{}
+\AddLayersAtBeginOfPageStyle{page-uebersicht-alle-haeuser}{uebersicht-alle-haeuser}
+\AddLayersAtBeginOfPageStyle{page-uebersicht-alle-haeuser}{cropmarksplain}
 
-% Raumplan Geographisches Institut
+% Haus A+D
 \DeclareNewLayer[background,%
   width=115mm,%
   height=158mm,%
-  hoffset=20mm,%
+  hoffset=10mm,%
   voffset=10mm,%
   contents={%
     \begin{tikzpicture}[x=1mm, y=1mm]%
       % map image
       \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[width=148mm,angle=90,origin=c]{images-print/3_Booklet_Raumpläne.pdf}%
+        \includegraphics[height=148mm]{images-print/A6_Haus_A_+_D_V2.pdf}%
       };%
       \end{tikzpicture}%
    }%
-]{gi}
-\newpairofpagestyles[]{page-gi}{}
-\AddLayersAtBeginOfPageStyle{page-gi}{gi}
-\AddLayersAtBeginOfPageStyle{page-gi}{cropmarksplain}
+]{Haus_A+D}
+\newpairofpagestyles[]{page-Haus_A+D}{}
+\AddLayersAtBeginOfPageStyle{page-Haus_A+D}{Haus_A+D}
+\AddLayersAtBeginOfPageStyle{page-Haus_A+D}{cropmarksplain}
+
+% Haus H (EG + OG)
+\DeclareNewLayer[background,%
+  width=115mm,%
+  height=158mm,%
+  hoffset=10mm,%
+  voffset=10mm,%
+  contents={%
+    \begin{tikzpicture}[x=1mm, y=1mm]%
+      % map image
+      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
+        \includegraphics[width=148mm,angle=90,origin=c]{images-print/A6_Haus_H_V2.pdf}%
+      };%
+      \end{tikzpicture}%
+   }%
+]{Haus_H_EG_+_OG}
+\newpairofpagestyles[]{page-Haus_H_EG_+_OG}{}
+\AddLayersAtBeginOfPageStyle{page-Haus_H_EG_+_OG}{Haus_H_EG_+_OG}
+\AddLayersAtBeginOfPageStyle{page-Haus_H_EG_+_OG}{cropmarksplain}
+
+% Haus K+I
+\DeclareNewLayer[background,%
+  width=115mm,%
+  height=158mm,%
+  hoffset=10mm,%
+  voffset=10mm,%
+  contents={%
+    \begin{tikzpicture}[x=1mm, y=1mm]%
+      % map image
+      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
+        \includegraphics[width=148mm,angle=90,origin=c]{images-print/A6_Haus_K+I_V2.pdf}%
+      };%
+      \end{tikzpicture}%
+   }%
+]{Haus_K+I}
+\newpairofpagestyles[]{page-Haus_K+I}{}
+\AddLayersAtBeginOfPageStyle{page-Haus_K+I}{Haus_K+I}
+\AddLayersAtBeginOfPageStyle{page-Haus_K+I}{cropmarksplain}
