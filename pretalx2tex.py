@@ -26,13 +26,25 @@ latex_substitutions = [
     (re.compile("([^ ]) (–|-) "), "\\1~-- ")
 ]
 
+# dict to define the order of the rooms in the booklet
+rooms_order = {
+    "Hörsaal 1 (Audimax 1)" : 1,
+    "Hörsaal 2 (Ditze H016)" : 2,
+    "Hörsaal 3 (K0506/ Audimax 2)" : 3,
+    "Hörsaal 4 (A.013)" : 4,
+    "Expert:innen (H.04)" : 5,
+     "Anwendertreffen/BoF1 (H.09)" : 6,
+    "Anwendertreffen/BoF2 (H.08)" : 7,
+    "FOSSGIS-Stand" : 8
+}
+
 commands = {
     "H\u00f6rsaal 1 (Audimax 1)": {
         "name": "Hörsaal 1 (Audimax 1)",
         "command": "\\abstractHSeins"
         },
-    "H\u00f6rsaal 2 (Dietze H016)": {
-        "name": "Hörsaal 2 (Dietze H016)",
+    "H\u00f6rsaal 2 (Ditze H016)": {
+        "name": "Hörsaal 2 (Ditze H016)",
         "command": "\\abstractHSzwei"
         },
     "H\u00f6rsaal 3 (K0506/ Audimax 2)": {
@@ -151,7 +163,8 @@ for day in schedule["conference"]["days"]:
             })
 
 # sort talks by start, then by room
-talks.sort(key=lambda t : (t["date"], t["room"]))
+#talks.sort(key=lambda t : (t["date"], t["room"]))
+talks.sort(key=lambda t : (t["date"], rooms_order[t["room"]]))
 
 # load template
 template_dir = os.path.abspath(os.path.dirname(args.template))
