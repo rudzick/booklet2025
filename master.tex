@@ -71,6 +71,7 @@ openany]{scrbook}
 \usepackage{refcount} % calculation of the page where the map is located
 \usepackage{svg}
 \usepackage{subfigure}
+\usepackage{nextpage}
 
 %\DeclareUnicodeCharacter{2032}{minutenstrich}
 
@@ -119,7 +120,9 @@ openany]{scrbook}
 \pagestyle{cropmarksstyle}
 
 \input{contents}
+%\clearpage
 \input{willkommen}
+%\clearpage
 %\input{workshops}
 \section*{Workshops am Mittwoch}\label{mittwoch-workshops}
 \input{workshops_mittwoch}
@@ -130,14 +133,15 @@ openany]{scrbook}
 \input{workshops_freitag}
 \input{tabelle-mittwoch}
 \input{mittwoch}
-\clearpage
+%\clearpage
 \input{tabelle-donnerstag}
 \input{donnerstag}
-\clearpage
+%\clearpage
 \input{tabelle-freitag}
 \input{freitag}
 \input{tabelle-samstag}
 \input{impressum}
+\input{medienpartner}
 %\input{qr_codes}
 \input{raumplaene}
 
