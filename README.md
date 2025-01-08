@@ -1,14 +1,14 @@
 ## About this repository
 
-This repository is for the source code of the booklet of [FOSSGIS 2024 conference](http://fossgis-konferenz.de/2024/) in Hamburg from 20 to 23 March 2024. A nightly build can be found [here](https://mymapnik.rudzick.it/master.pdf).
+This repository is for the source code of the booklet of [FOSSGIS 2025 conference](http://fossgis-konferenz.de/2025/) in Münster from 26 to 29 March 2025. A nightly build can be found [here](https://mymapnik.rudzick.it/master.pdf).
 
 ## Building
 
 To build the booklet run:
 
 ```sh
-lualatex master.tex
-lualatex master.tex
+lualatex --shell-escape master.tex
+lualatex --shell-escape master.tex
 ```
 
 ## Contributing
