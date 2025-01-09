@@ -12,7 +12,7 @@ import textwrap
 
 
 latex_substitutions = [
-    (re.compile("([a-z])\*(innen|r|n)"), "\\1(\\2)"),
+    (re.compile(r'([a-z])\*(innen|r|n)'), r'\\1(\\2)'),
     (re.compile("„"), "\""),
     (re.compile("“"), "\""),
     (re.compile(r'\\'), r'\\textbackslash'),
@@ -28,50 +28,53 @@ latex_substitutions = [
 
 # dict to define the order of the rooms in the booklet
 rooms_order = {
-    "Hörsaal 1 (Audimax 1)" : 1,
-    "Hörsaal 2 (Ditze H016)" : 2,
-    "Hörsaal 3 (K0506/ Audimax 2)" : 3,
-    "Hörsaal 4 (A.013)" : 4,
-    "Expert:innen (H.04)" : 5,
-     "Anwendertreffen/BoF1 (H.09)" : 6,
-    "Anwendertreffen/BoF2 (H.08)" : 7,
-    "FOSSGIS-Stand" : 8
+    "HS1 (Aula)" : 1,
+    "HS2 (S10)" : 2,
+    "HS3 (S1)" : 3,
+    "HS4 (S2)" : 4,
+    "Bof1 (S8)" : 5,
+     "Bof2 (S9)" : 6,
+    "Bof3/Expert:innen" : 7,
+    "WS1 (106)" : 8,
+    "WS2 (107)" : 9,
+    "WS3 (108)" : 10,
+    "FOSSGIS-Stand" : 11
 }
 
 commands = {
-    "H\u00f6rsaal 1 (Audimax 1)": {
-        "name": "Hörsaal 1 (Audimax 1)",
+    "HS1 (Aula)": {
+        "name": "HS1 (Aula)",
         "command": "\\abstractHSeins"
         },
-    "H\u00f6rsaal 2 (Ditze H016)": {
-        "name": "Hörsaal 2 (Ditze H016)",
+    "HS2 (S10)": {
+        "name": "HS2 (S10)",
         "command": "\\abstractHSzwei"
         },
-    "H\u00f6rsaal 3 (K0506/ Audimax 2)": {
-        "name": "Hörsaal 3 (K0506/ Audimax 2)",
+    "HS3 (S1)": {
+        "name": "HS3 (S1)",
         "command": "\\abstractHSdrei"
         },
-    "H\u00f6rsaal 4 (A.013)": {
-        "name": "Hörsaal 4 (A.013)",
+    "HS4 (S2)": {
+        "name": "HS4 (S2)",
         "command": "\\abstractHSvier"
         },
-    "Expert:innen (H.04)": {
-        "name": "Expert:innen (H.04)",
-        "command": "\\abstractExp"
+    "Bof1 (S8)": {
+        "name": "Bof1 (S8)",
+        "command": "\\abstractBoFeins"
         },
-   "Anwendertreffen/BoF1 (H.09)": {
-        "name": "Anwendertreffen/BoF1 (H.09)",
-        "command": "\\abstractAnwBoFeins"
-        },
-   "Anwendertreffen/BoF2 (H.08)": {
-        "name": "Anwendertreffen/BoF2 (H.08)",
+   "Bof2 (S9)": {
+        "name": "BoF2 (S9)",
         "command": "\\abstractAnwBoFzwei"
+        },
+   "Bof3/Expert:innen": {
+        "name": "BoF3/Expert:innen",
+        "command": "\\abstractAnwBoFdrei"
         },
 }
 default_cmd = {"name": "???", "command": "\\abstractOther"}
 DATE_FORMAT = "%Y-%m-%dT%H:%M:%S%z"
-RE_SINGLE_NEWLINE = re.compile("([^\\n])\\n", re.MULTILINE)
-RE_VALID_WORD = re.compile("^[-A-ZÄÖÜäöüa-z]{2,}$")
+RE_SINGLE_NEWLINE = re.compile(r'([^\\n])\\n', re.MULTILINE)
+RE_VALID_WORD = re.compile(r'^[-A-ZÄÖÜäöüa-z]{2,}$')
 
 def datetimeformat(value, format="%H:%M"):
     return value.strftime(format)
