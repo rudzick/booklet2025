@@ -60,7 +60,7 @@ commands = {
         },
     "Bof1 (S8)": {
         "name": "Bof1 (S8)",
-        "command": "\\abstractBoFeins"
+        "command": "\\abstractAnwBoFeins"
         },
    "Bof2 (S9)": {
         "name": "BoF2 (S9)",
