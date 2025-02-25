@@ -38,7 +38,8 @@ rooms_order = {
     "WS1 (106)" : 8,
     "WS2 (107)" : 9,
     "WS3 (108)" : 10,
-    "FOSSGIS-Stand" : 11
+    "Poster (Zelt)" : 11,
+    "FOSSGIS-Stand" : 12
 }
 
 commands = {
@@ -133,6 +134,7 @@ def talk2tex(template, item, last_timeslot):
 parser = argparse.ArgumentParser(description="convert Pretalx exports to LaTeX, output will be written to STDOUT")
 parser.add_argument("-f", "--format", help="output format, either 'tex', 'txt' or 'wordlist'", type=str)
 parser.add_argument("-w", "--workshops", help="workshops only", action="store_true")
+parser.add_argument("-p", "--postersession", help="posters only", action="store_true")
 parser.add_argument("-d", "--day", help="day, format: YYYY-MM-DD")
 parser.add_argument("template", help="template to render")
 parser.add_argument("frab_export", help="Frab-compatible JSON export of Pretalx", type=argparse.FileType("r"))
@@ -149,6 +151,10 @@ for day in schedule["conference"]["days"]:
             if args.workshops and talk["type"] != "Workshop (Pr\u00e4senz)":
                 continue
             elif not args.workshops and talk["type"] == "Workshop (Pr\u00e4senz)":
+                continue
+            elif args.postersession and talk["type"] != "Poster-Session":
+                continue
+            elif not args.postersession and talk["type"] == "Poster-Session":
                 continue
             speakers = []
             for person in talk["persons"]:
