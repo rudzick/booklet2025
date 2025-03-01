@@ -31,7 +31,7 @@
     \begin{tikzpicture}[x=1mm, y=1mm]%
       % map image
       \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[height=148mm]{images-print/A6_Häuser_V3.pdf}%
+        \includegraphics[width=148mm,angle=90,origin=c]{images-print/2025-02-13_Karte_Muenster.png}%
       };%
       \end{tikzpicture}%
    }%
@@ -40,59 +40,22 @@
 \AddLayersAtBeginOfPageStyle{page-uebersicht-alle-haeuser}{uebersicht-alle-haeuser}
 \AddLayersAtBeginOfPageStyle{page-uebersicht-alle-haeuser}{cropmarksplain}
 
-% Haus A+D
+% Übersicht Räume Schloss Münster
 \DeclareNewLayer[background,%
   width=115mm,%
   height=158mm,%
-  hoffset=10mm,%
+  hoffset=20mm,%
   voffset=10mm,%
   contents={%
     \begin{tikzpicture}[x=1mm, y=1mm]%
       % map image
       \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[height=148mm]{images-print/A6_Haus_A_+_D_V3.pdf}%
+        \includegraphics[width=148mm,angle=90,origin=c]{images-print/Strichgrafik_Übersicht_schloss_muenster.png}%
       };%
       \end{tikzpicture}%
    }%
-]{Haus_A+D}
-\newpairofpagestyles[]{page-Haus_A+D}{}
-\AddLayersAtBeginOfPageStyle{page-Haus_A+D}{Haus_A+D}
-\AddLayersAtBeginOfPageStyle{page-Haus_A+D}{cropmarksplain}
+]{Schloss_Muenster}
+\newpairofpagestyles[]{page-Schloss_Muenster}{}
+\AddLayersAtBeginOfPageStyle{page-Schloss_Muenster}{Schloss_Muenster}
+\AddLayersAtBeginOfPageStyle{page-Schloss_Muenster}{cropmarksplain}
 
-% Haus H (EG + OG)
-\DeclareNewLayer[background,%
-  width=115mm,%
-  height=158mm,%
-  hoffset=10mm,%
-  voffset=10mm,%
-  contents={%
-    \begin{tikzpicture}[x=1mm, y=1mm]%
-      % map image
-      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[width=148mm,angle=90,origin=c]{images-print/A6_Haus_H_V3.pdf}%
-      };%
-      \end{tikzpicture}%
-   }%
-]{Haus_H_EG_+_OG}
-\newpairofpagestyles[]{page-Haus_H_EG_+_OG}{}
-\AddLayersAtBeginOfPageStyle{page-Haus_H_EG_+_OG}{Haus_H_EG_+_OG}
-\AddLayersAtBeginOfPageStyle{page-Haus_H_EG_+_OG}{cropmarksplain}
-
-% Haus K+I
-\DeclareNewLayer[background,%
-  width=115mm,%
-  height=158mm,%
-  hoffset=10mm,%
-  voffset=10mm,%
-  contents={%
-    \begin{tikzpicture}[x=1mm, y=1mm]%
-      % map image
-      \draw (0,0) node [inner sep=0mm, anchor=south west] {%
-        \includegraphics[width=148mm,angle=90,origin=c]{images-print/A6_Haus_K+I_V3.pdf}%
-      };%
-      \end{tikzpicture}%
-   }%
-]{Haus_K+I}
-\newpairofpagestyles[]{page-Haus_K+I}{}
-\AddLayersAtBeginOfPageStyle{page-Haus_K+I}{Haus_K+I}
-\AddLayersAtBeginOfPageStyle{page-Haus_K+I}{cropmarksplain}
